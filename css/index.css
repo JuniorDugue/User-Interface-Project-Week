@@ -134,3 +134,22 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+.container .menuBar {
+  display: inline-flex;
+  flex-direction: row;
+}
+.container .menuBar .logo {
+  background: red;
+}
+.container .menuBar nav {
+  display: flex;
+}
+.container .menuBar nav ul li {
+  list-style: none;
+}
+.container .menuBar nav ul li a {
+  text-decoration: none;
+}
+body .container {
+  background: red;
+}
