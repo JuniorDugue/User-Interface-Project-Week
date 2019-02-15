@@ -134,12 +134,40 @@ table {
   border-spacing: 0;
 }
 /* Your Code Goes Here */
+* {
+  box-sizing: border-box;
+}
+html {
+  font-size: 62.5%;
+}
+html body {
+  font-family: Roboto, Arial, sans-serif;
+}
+html body p {
+  font-size: 1.6rem;
+}
+html .container {
+  max-width: 100%;
+  width: 1028px;
+  margin: 0 auto;
+  background: #fff;
+  color: #222;
+}
 .container .menuBar {
-  display: inline-flex;
+  display: flex;
   flex-direction: row;
+  background: #99a4af;
+  max-width: 100%;
+  justify-content: space-between;
 }
 .container .menuBar .logo {
-  background: red;
+  font-size: 2.4rem;
+  font-weight: bold;
+  padding-left: 90px;
+}
+.container .menuBar .logo a {
+  text-decoration: none;
+  color: #fff;
 }
 .container .menuBar nav {
   display: flex;
@@ -150,6 +178,43 @@ table {
 .container .menuBar nav ul li a {
   text-decoration: none;
 }
-body .container {
-  background: red;
+footer {
+  display: flex;
+  flex-flow: row wrap;
+}
+footer .footer1 {
+  width: 31%;
+  border: 1px red solid;
+}
+footer .footer2 {
+  width: 23%;
+  border: 1px red solid;
+}
+footer .footer3 {
+  width: 23%;
+  border: 1px red solid;
+}
+footer .footer4 {
+  width: 23%;
+  border: 1px red solid;
+}
+footer .copyright {
+  border: 1px red solid;
+}
+footer .copyright h5 {
+  text-align: center;
+}
+header {
+  background-image: url("../img/home/home-jumbotron.png");
+  width: 1028px;
+  max-width: 100%;
+  height: 550px;
+}
+header .headerTxt h2 {
+  font-size: 6.4rem;
+  color: #fff;
+  line-height: 75px;
+  font-weight: bold;
+  padding-top: 25%;
+  padding-left: 90px;
 }
