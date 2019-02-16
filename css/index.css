@@ -310,10 +310,14 @@ header .headerTxt h2 {
 .recentProjects {
   border: 1px solid red;
 }
-.recentProjects h3 {
+.recentProjects h4 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
+}
+.recentProjects .recentImages {
+  z-index: -1;
+  border: 1px solid red;
 }
 .recentProjects .villasArea {
   position: relative;
@@ -326,23 +330,47 @@ header .headerTxt h2 {
   position: absolute;
   right: 0;
   bottom: 0;
+  border: 1px solid #fff;
 }
-.recentProjects .villasArea .villasImage {
-  z-index: -1;
-}
-.outskirts {
+.recentProjects .outskirts {
   border: 1px solid red;
 }
-.outskirts h4 {
+.recentProjects .outskirts h4 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
 }
-.theBlocks {
+.recentProjects .outskirts .outskirtsArea {
+  position: relative;
+}
+.recentProjects .outskirts .outskirtsHeader {
+  background: #D8D8D8;
+  padding: 10px 30px;
+  width: 30%;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #fff;
+}
+.recentProjects .theBlocks {
   border: 1px solid red;
 }
-.theBlocks h4 {
+.recentProjects .theBlocks h4 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
+}
+.recentProjects .theBlocks .theBlocksArea {
+  position: relative;
+}
+.recentProjects .theBlocks .theBlocksArea .theBlocksHeader {
+  background: #D8D8D8;
+  padding: 10px 30px;
+  width: 30%;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  border: 1px solid #fff;
 }
