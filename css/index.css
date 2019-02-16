@@ -160,15 +160,20 @@ html .container {
   display: flex;
   flex-direction: row;
   background: #99a4af;
+  width: 1028px;
   max-width: 100%;
   height: 60px;
   justify-content: space-between;
   align-items: center;
+  position: fixed;
+  top: 0;
+  z-index: 2;
+  overflow: hidden;
 }
 .container .menuBar .logo {
   font-size: 2.4rem;
   font-weight: bold;
-  padding-left: 90px;
+  padding-left: 50px;
 }
 .container .menuBar .logo a {
   text-decoration: none;
@@ -207,6 +212,9 @@ footer {
   line-height: 2.6rem;
   background: #828282;
   color: #fff;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 60px;
 }
 footer .footerContact {
   display: flex;
@@ -219,23 +227,17 @@ footer .footerContact h4 {
   font-weight: regular;
 }
 footer .footerContact .footer1 {
-  width: 31%;
-  border: 1px solid red;
+  width: 35%;
+  flex-basis: 40%;
 }
 footer .footerContact .footer2 {
-  width: 23%;
-  border: 1px solid red;
+  flex-basis: 20%;
 }
 footer .footerContact .footer3 {
-  width: 23%;
-  border: 1px solid red;
+  flex-basis: 20%;
 }
 footer .footerContact .footer4 {
-  width: 23%;
-  border: 1px solid red;
-}
-footer .copyright {
-  border: 1px red solid;
+  flex-basis: 20%;
 }
 footer .copyright h5 {
   text-align: center;
@@ -252,7 +254,10 @@ header .headerTxt h2 {
   line-height: 7.5rem;
   font-weight: bold;
   padding-top: 25%;
-  padding-left: 90px;
+  padding-left: 50px;
+}
+.services {
+  padding-bottom: 100px;
 }
 .services .btn {
   padding: 10px 20px;
@@ -262,7 +267,6 @@ header .headerTxt h2 {
   cursor: pointer;
 }
 .services .services1 {
-  border: 1px solid red;
   width: 100%;
   display: flex;
   flex-direction: row;
@@ -280,15 +284,13 @@ header .headerTxt h2 {
   color: #222;
 }
 .services .services1 .services1Image {
-  width: 50%;
+  width: 40%;
   max-width: 100%;
-  border: 1px solid red;
 }
 .services .services1 .services1img {
   width: 100%;
 }
 .services .services2 {
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -297,11 +299,10 @@ header .headerTxt h2 {
 }
 .services .services2 .services2Image {
   max-width: 100%;
-  width: 50%;
+  width: 40%;
 }
 .services .services2 .services2Image .services2img {
   width: 100%;
-  border: 1px solid red;
 }
 .services .services2 .services2Content {
   width: 40%;
@@ -312,17 +313,15 @@ header .headerTxt h2 {
   font-weight: bold;
   color: #222;
 }
-.recentProjects {
-  border: 1px solid red;
-}
-.recentProjects h4 {
+.recentProjects h3 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
+  padding-left: 50px;
+  padding-bottom: 50px;
 }
 .recentProjects .recentImages {
   z-index: -1;
-  border: 1px solid red;
   display: block;
   margin-left: auto;
   margin-right: auto;
@@ -330,19 +329,36 @@ header .headerTxt h2 {
 }
 .recentProjects .villasArea {
   position: relative;
+  margin-bottom: 97px;
 }
 .recentProjects .villasArea .villas {
   background: #D8D8D8;
-  padding: 10px 30px;
-  width: 30%;
-  z-index: 100;
+  padding: 24px 79px;
+  z-index: 1;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  right: 50px;
+  bottom: -30px;
   border: 1px solid #fff;
 }
-.recentProjects .outskirts {
-  border: 1px solid red;
+.recentProjects .villasArea .villas h4 {
+  font-size: 2.8rem;
+  font-weight: bold;
+  color: #222;
+}
+.recentProjects .villasArea .villasImage {
+  max-width: 100%;
+}
+.recentProjects .villasText {
+  display: flex;
+  flex-flow: column wrap;
+  padding: 0 50px 0 50px;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+.recentProjects .villasText p {
+  width: 40%;
+  margin: 15px;
 }
 .recentProjects .outskirts h4 {
   font-size: 2.8rem;
@@ -351,35 +367,61 @@ header .headerTxt h2 {
 }
 .recentProjects .outskirts .outskirtsArea {
   position: relative;
+  margin-bottom: 97px;
 }
-.recentProjects .outskirts .outskirtsHeader {
+.recentProjects .outskirts .outskirtsArea .outskirtsImage {
+  max-width: 100%;
+}
+.recentProjects .outskirts .outskirtsArea .outskirtsHeader {
   background: #D8D8D8;
-  padding: 10px 30px;
-  width: 30%;
-  z-index: 100;
+  padding: 24px 79px;
+  z-index: 1;
   position: absolute;
-  right: 0;
-  bottom: 0;
+  left: 50px;
+  bottom: -30px;
   border: 1px solid #fff;
 }
-.recentProjects .theBlocks {
-  border: 1px solid red;
+.recentProjects .outskirts .outskirtsText {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
 }
-.recentProjects .theBlocks h4 {
+.recentProjects .outskirts p {
+  width: 40%;
+  margin: 15px;
+}
+.recentProjects .theBlocks .theBlocksArea {
+  position: relative;
+  margin-bottom: 97px;
+}
+.recentProjects .theBlocks .theBlocksArea .theBlocksImage {
+  max-width: 100%;
+}
+.recentProjects .theBlocks .theBlocksArea .theBlocksHeader {
+  background: #D8D8D8;
+  padding: 24px 79px;
+  z-index: 1;
+  position: absolute;
+  right: 50px;
+  bottom: -30px;
+  border: 1px solid #fff;
+}
+.recentProjects .theBlocks .theBlocksArea .theBlocksHeader h4 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
 }
-.recentProjects .theBlocks .theBlocksArea {
-  position: relative;
+.recentProjects .theBlocks .theBlocksText {
+  display: flex;
+  flex-flow: column wrap;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 100px;
 }
-.recentProjects .theBlocks .theBlocksArea .theBlocksHeader {
-  background: #D8D8D8;
-  padding: 10px 30px;
-  width: 30%;
-  z-index: 100;
-  position: absolute;
-  right: 0;
-  bottom: 0;
-  border: 1px solid #fff;
+.recentProjects .theBlocks .theBlocksText p {
+  width: 40%;
+  margin: 15px;
 }

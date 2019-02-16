@@ -10,12 +10,13 @@ header {
       line-height: 7.5rem;
       font-weight: bold;
       padding-top: 25%;
-      padding-left: 90px; //reminder to make this a variable
+      padding-left: 50px; //reminder to make this a variable
     }
   }
 }
 
 .services {
+  padding-bottom: 100px;
   .btn {
     // border: none; 
     padding: 10px 20px;
@@ -24,19 +25,21 @@ header {
     margin-top: 20px;
     cursor: pointer;
   }
+
   .services1 {
-    border: @border;
+    // border: @border;
     width: 100%;
     display: flex;
     flex-direction: row;
     height: 100%;
     // justify-content: center;
     justify-content: space-around;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 20px 0; //make into a variable
 
     .services1Content {
       width: 40%;
       align-self: center;
+
       h3 {
         font-size: 2.8rem;
         font-weight: bold;
@@ -46,32 +49,35 @@ header {
 
 
     .services1Image {
-      width: 50%;
+      width: 40%;
       max-width: 100%;
-      border: @border;
+      // border: @border;
     }
+
     .services1img {
       width: 100%;
     }
   }
 
   .services2 {
-    border: @border;
+    // border: @border;
     // width: 50%;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 100%;
-    padding: 20px 0 20px 0;
+    padding: 20px 0 20px 0; //make into a variable
 
     .services2Image {
       max-width: 100%;
-      width: 50%;
+      width: 40%;
+
       .services2img {
         width: 100%;
-        border: @border;
+        // border: @border;
       }
     }
+
     .services2Content {
       width: 40%;
       align-self: center;
@@ -86,17 +92,19 @@ header {
 }
 
 .recentProjects {
-  border: @border;
+  // border: @border;
   // position: relative;
-  h4 {
+  h3 {
     font-size: 2.8rem;
     font-weight: bold;
     color: #222;
+    padding-left: 50px;
+    padding-bottom: 50px;
   }
 
   .recentImages {
     z-index: -1;
-    border: @border;
+    // border: @border;
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -105,68 +113,130 @@ header {
 
   .villasArea {
     position: relative;
+    margin-bottom: 97px; //make into a variable
+
     .villas {
       background: #D8D8D8;
-      padding: 10px 30px;
-      width: 30%;
-      z-index: 100;
+      padding: 24px 79px; //make into a variable
+      z-index: 1;
       position: absolute;
-      right: 0;
-      bottom: 0;
+      right: 50px;
+      bottom: -30px;
       border: 1px solid #fff;
-
-      .villasImage {
-        // z-index: -1;
-        // border: @border;
-      } 
+        
+      h4 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #222;
+        }
     }
-  
+
+    .villasImage {
+      max-width: 100%;
+    }
+  }
+
+  .villasText {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+    p {
+      // border: @border;
+      width: 40%;
+      margin: 15px;
+    }
   }
 
   .outskirts {
-    border: @border;
+    // border: @border;
     h4 {
       font-size: 2.8rem;
       font-weight: bold;
       color: #222;
     }
+
     .outskirtsArea {
       position: relative;
+      margin-bottom: 97px; //make into a variable
+
+      .outskirtsImage {
+        max-width: 100%;
+      }
+      
+      .outskirtsHeader {
+        background: #D8D8D8;
+        padding: 24px 79px;
+        z-index: 1;
+        position: absolute;
+        left: 50px;
+        bottom: -30px;
+        border: 1px solid #fff;
+      }
     }
-    .outskirtsHeader {
-      background: #D8D8D8;
-      padding: 10px 30px;
-      width: 30%;
-      z-index: 100;
-      position: absolute;
-      right: 0;
-      bottom: 0;
-      border: 1px solid #fff;
+
+    .outskirtsText {
+      // border: @border;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    p {
+      // border: @border;
+      width: 40%;
+      margin: 15px;
     }
   }
   
   .theBlocks {
-    border: @border;
-    h4 {
-      font-size: 2.8rem;
-      font-weight: bold;
-      color: #222;
-    }
+    // border: @border;
+
     .theBlocksArea {
       position: relative;
+      margin-bottom: 97px; //make into a variable
+
+      .theBlocksImage {
+        max-width: 100%;
+      }
+
       .theBlocksHeader {
         background: #D8D8D8;
-        padding: 10px 30px;
-        width: 30%;
-        z-index: 100;
+        padding: 24px 79px;
+        z-index: 1;
         position: absolute;
-        right: 0;
-        bottom: 0;
+        right: 50px;
+        bottom: -30px;
         border: 1px solid #fff;
-        
+
+          h4 {
+            font-size: 2.8rem;
+            font-weight: bold;
+            color: #222;
+          }
+      }
+    }
+
+    .theBlocksText {
+      // border: @border;
+      display: flex;
+      flex-flow: column wrap;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+      margin-bottom: 100px;
+
+      p {
+        // border: @border;
+        width: 40%;
+        margin: 15px;
       }
     }
   }
-
 }
 
