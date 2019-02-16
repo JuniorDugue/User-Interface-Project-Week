@@ -315,10 +315,25 @@ header .headerTxt h2 {
   font-weight: bold;
   color: #222;
 }
+.recentProjects .villasArea {
+  position: relative;
+}
+.recentProjects .villasArea .villas {
+  background: #D8D8D8;
+  padding: 10px 30px;
+  width: 30%;
+  z-index: 100;
+  position: absolute;
+  right: 0;
+  bottom: 0;
+}
+.recentProjects .villasArea .villasImage {
+  z-index: -1;
+}
 .outskirts {
   border: 1px solid red;
 }
-.outskirts h3 {
+.outskirts h4 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
@@ -326,7 +341,7 @@ header .headerTxt h2 {
 .theBlocks {
   border: 1px solid red;
 }
-.theBlocks h3 {
+.theBlocks h4 {
   font-size: 2.8rem;
   font-weight: bold;
   color: #222;
