@@ -11,45 +11,77 @@ header {
       font-weight: bold;
       padding-top: 25%;
       padding-left: 90px; //reminder to make this a variable
-
     }
   }
 }
 
-.services1 {
-  border: @border;
-  width: 100%;
-  display: flex;
-  flex-direction: row;
-  height: 100%;
-  // justify-content: center;
-  justify-content: space-evenly;
-
-  .services1Content {
-    width: 40%;
-    h3 {
-      font-size: 2.8rem;
-      font-weight: bold;
-      color: #222;
-    }
+.services {
+  .btn {
+    // border: none; 
+    padding: 10px 20px;
+    background: #fff;
+    border: 1px solid #222;
+    margin-top: 20px;
+    cursor: pointer;
   }
-
-
-  .services1Image {
-    width: 50%;
-    max-width: 100%;
+  .services1 {
     border: @border;
-    
-  }
-}
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    // justify-content: center;
+    justify-content: space-around;
+    padding: 20px 0 20px 0;
 
-.services2 {
-  border: @border;
-  width: 50%;
-  h3 {
-    font-size: 2.8rem;
-    font-weight: bold;
-    color: #222;
+    .services1Content {
+      width: 40%;
+      align-self: center;
+      h3 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #222;
+      }
+    }
+
+
+    .services1Image {
+      width: 50%;
+      max-width: 100%;
+      border: @border;
+    }
+    .services1img {
+      width: 100%;
+    }
+  }
+
+  .services2 {
+    border: @border;
+    // width: 50%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    height: 100%;
+    padding: 20px 0 20px 0;
+
+    .services2Image {
+      max-width: 100%;
+      width: 50%;
+      .services2img {
+        width: 100%;
+        border: @border;
+      }
+    }
+    .services2Content {
+      width: 40%;
+      align-self: center;
+
+      h3 {
+        font-size: 2.8rem;
+        font-weight: bold;
+        color: #222;
+      }  
+    }
   }
 }
 
