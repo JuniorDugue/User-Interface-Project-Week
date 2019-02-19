@@ -3,27 +3,41 @@ header {
   width: 1028px;
   max-width: 100%;
   height: 550px;
+  margin-bottom: 50px;
+
   .headerTxt{
     h2 {
       font-size: 6.4rem;
       color: #fff;
       line-height: 7.5rem;
       font-weight: bold;
-      padding-top: 25%;
       padding-left: 50px; //reminder to make this a variable
+      padding-top: 95px;
+      @media @phone{
+        // background: red;
+        padding-top: 55%;
+      }
     }
   }
 }
 
 .services {
-  padding-bottom: 100px;
+  padding-bottom: 50px;
+
   .btn {
-    // border: none; 
     padding: 10px 20px;
     background: #fff;
     border: 1px solid #222;
     margin-top: 20px;
     cursor: pointer;
+
+    @media @phone {
+      display: block;
+      width: 100%;
+      text-align: center;
+      border: 2px solid #222;
+      padding: 20px 40px;
+    }
   }
 
   .services1 {
@@ -34,24 +48,42 @@ header {
     height: 100%;
     // justify-content: center;
     justify-content: space-around;
-    padding: 20px 0 20px 0; //make into a variable
+    padding: 20px 0 50px 0; //make into a variable
+
+    @media @phone {
+      flex-direction: column-reverse;
+    }
 
     .services1Content {
       width: 40%;
       align-self: center;
 
+      @media @phone {
+        width: 100%;
+        padding: 0 30px 0 30px;
+      }
+
       h3 {
         font-size: 2.8rem;
         font-weight: bold;
         color: #222;
+
+        @media @phone {
+          text-align: center;
+        }
       }
     }
-
 
     .services1Image {
       width: 40%;
       max-width: 100%;
       // border: @border;
+
+      @media @phone {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 30px 0 30px;
+      }
     }
 
     .services1img {
@@ -66,11 +98,21 @@ header {
     flex-direction: row;
     justify-content: space-around;
     height: 100%;
-    padding: 20px 0 20px 0; //make into a variable
+    padding: 50px 0 20px 0; //make into a variable
+
+    @media @phone {
+      flex-direction: column;
+    }
 
     .services2Image {
       max-width: 100%;
       width: 40%;
+
+      @media @phone {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 30px 0 30px;
+      }
 
       .services2img {
         width: 100%;
@@ -81,6 +123,11 @@ header {
     .services2Content {
       width: 40%;
       align-self: center;
+
+      @media @phone {
+        width: 100%;
+        padding: 0 30px 0 30px;
+      }
 
       h3 {
         font-size: 2.8rem;
@@ -146,7 +193,7 @@ header {
 
     p {
       // border: @border;
-      width: 40%;
+      width: 43%;
       margin: 15px;
     }
   }
@@ -189,7 +236,7 @@ header {
 
     p {
       // border: @border;
-      width: 40%;
+      width: 43%;
       margin: 15px;
     }
   }
@@ -233,7 +280,7 @@ header {
 
       p {
         // border: @border;
-        width: 40%;
+        width: 43%;
         margin: 15px;
       }
     }
