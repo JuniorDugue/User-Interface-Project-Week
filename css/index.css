@@ -174,35 +174,58 @@ html .container {
   font-size: 2.4rem;
   font-weight: bold;
   padding-left: 50px;
+  z-index: 3;
 }
 .container .menuBar .logo a {
   text-decoration: none;
   color: #fff;
 }
+.container .menuBar .open-btn {
+  position: relative;
+  right: 50px;
+  cursor: pointer;
+}
 .container .menuBar nav {
   display: flex;
+  height: 0%;
+  width: 100%;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #99a5b0;
+  overflow-y: hidden;
+  transition: 0.6s;
 }
-.container .menuBar nav .navMenu {
+.container .menuBar nav .close-btn {
+  position: absolute;
+  top: 0px;
+  right: 88px;
+  color: rgba(255, 255, 255, 0.055);
+  text-decoration: none;
+  font-size: 48px;
+  transition: 0.3s ease all;
+}
+.container .menuBar nav ul {
   width: 100%;
   overflow-x: visible;
   z-index: 1;
-  position: fixed;
+  position: relative;
+  top: 25%;
+  text-align: center;
   display: block;
   transition: 0.4s;
 }
-.container .menuBar nav .navMenu ul li {
+.container .menuBar nav ul li {
   list-style: none;
 }
-.container .menuBar nav .navMenu ul li a {
+.container .menuBar nav ul li a {
   text-decoration: none;
-}
-.container .open {
-  color: #fff;
-  font-size: 2.4rem;
   display: block;
-  float: right;
-  margin: 1em 0 0 1em;
-  cursor: pointer;
+  color: rgba(255, 255, 255, 0.6);
+  transition: 0.6s ease all;
+  font-size: 32px;
+  padding: 8px;
 }
 footer {
   display: flex;

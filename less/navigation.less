@@ -19,6 +19,7 @@
       // color: #fff;
       font-weight: bold;
       padding-left: 50px; //reminder to make this a variable
+      z-index: 3;
 
       a {
         text-decoration: none;
@@ -26,39 +27,61 @@
       }
     }
 
+    .open-btn {
+      position: relative;
+      right: 50px;
+      cursor: pointer;
+    }
+
     nav {
       display: flex;
-
-      .navMenu {
-        width: 100%;
-        overflow-x: visible;
-        z-index: 1;
-        position: fixed;
-        // background: rgba(0,0,60,0.9);
-        display: block;
-        transition: 0.4s;
+      height: 0%;
+      width: 100%;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #99a5b0;
+      overflow-y: hidden;
+      transition: 0.6s;
+        
+        .close-btn {
+          position: absolute;
+          top: 0px;
+          right: 88px;
+          color: rgba(255, 255, 255, 0.055);
+          text-decoration: none;
+          font-size: 48px;
+          transition: 0.3s ease all;
+        }
 
         ul {
-
+            width: 100%;
+            overflow-x: visible;
+            z-index: 1;
+            position: relative;
+            top: 25%;
+            text-align: center;
+            // background: rgba(0,0,60,0.9);
+            display: block;
+            transition: 0.4s;
+    
           li {
             list-style: none;
 
             a {
               text-decoration: none;
+              display: block;
+              color: rgba(255,255,255,0.6);
+              transition: 0.6s ease all;
+              font-size: 32px;
+              padding: 8px;
             }
+
+            //reminder to insert hover effect here via less
 
           }
         }
       }
     }
   }
-
-  .open {
-    color: #fff;
-    font-size: 2.4rem;
-    display: block;
-    float: right;
-    margin: 1em 0 0 1em;
-    cursor: pointer;
-  }
-}

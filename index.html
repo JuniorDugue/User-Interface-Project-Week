@@ -18,10 +18,14 @@
 	<!-- Menu Content  -->
 	<div class="menuBar">
 		<div class="logo"><a href="#">S&J</a></div>
-		
-		<nav>
-			<ul id="nav" class="navMenu">
-				<img src="img/nav-hamburger.png" alt="" id="close" class="close">
+
+		<div class="open-btn" onclick="openNav()">
+			<img src="img/nav-hamburger.png" alt="hamburger menu">
+		</div>
+
+		<nav id="nav" class="nav-overlay">
+			<a href="javascript:void(0)" class="close-btn" onclick="closeNav()"><img src="img/nav-hamburger-close.png" alt=""></a>
+			<ul class="nav-overlay-content">
 				<li><a href="index.html">Home</a></li>
 				<li><a href="services.html">Services</a></li>
 				<li><a href="contact.html">Contact</a></li>
