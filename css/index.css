@@ -543,3 +543,76 @@ header .headerTxt h2 {
   width: 43%;
   margin: 15px;
 }
+.container {
+  /* Style the buttons that are used to open the tab content */
+  /* Change background color of buttons on hover */
+  /* Create an active/current tablink class */
+}
+.container .tab {
+  overflow: hidden;
+  border: 1px solid #ccc;
+  background-color: #f1f1f1;
+}
+.container .tab button {
+  background-color: inherit;
+  float: left;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  padding: 14px 16px;
+  transition: 0.3s;
+}
+.container .tab button:hover {
+  background-color: #ddd;
+}
+.container .tab button.active {
+  background-color: #ccc;
+}
+.container .tabcontent {
+  display: none;
+  padding: 6px 12px;
+  animation: fadeEffect 1s;
+}
+@keyframes fadeEffect {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.container .tabcontent h2 {
+  font-size: 3.2rem;
+}
+.container .tabcontent #preConstruction {
+  display: flex;
+  flex-direction: row;
+}
+.container .tabcontent #preConstruction .preConstructionContent {
+  display: flex;
+  flex-direction: column;
+}
+.container .tabcontent #construction {
+  display: flex;
+  flex-direction: row;
+}
+.container .tabcontent #construction .constructionContent {
+  display: flex;
+  flex-direction: column;
+}
+.container .tabcontent #designBuild {
+  display: flex;
+  flex-direction: row;
+}
+.container .tabcontent #designBuild .designBuildContent {
+  display: flex;
+  flex-direction: column;
+}
+.container .tabcontent #sustainability {
+  display: flex;
+  flex-direction: row;
+}
+.container .tabcontent #sustainability .sustainabilityContent {
+  display: flex;
+  flex-direction: column;
+}
