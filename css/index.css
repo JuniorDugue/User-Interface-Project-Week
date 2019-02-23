@@ -565,11 +565,11 @@ header .headerTxt h2 {
   color: #fff;
 }
 .container .servicesIntro {
-  padding: 0 50px 0 50px;
+  padding: 40px 50px 0 50px;
 }
 .container .tabs {
   overflow: hidden;
-  padding: 40px 50px 30px 50px;
+  padding: 20px 50px 30px 50px;
   display: flex;
   justify-content: space-between;
 }
@@ -597,7 +597,6 @@ header .headerTxt h2 {
   padding: 6px 12px;
   animation: fadeEffect 1s;
   padding: 0 50px 0 50px;
-  border: 1px red solid;
 }
 @keyframes fadeEffect {
   from {
@@ -615,27 +614,27 @@ header .headerTxt h2 {
   width: 100%;
   max-width: 100%;
 }
-.container #preConstruction {
-  border: 1px solid red;
+.container p {
+  padding-bottom: 25px;
 }
 .container #preConstruction .preConstructionContent {
   display: flex;
   flex-direction: column;
   width: 50%;
-  border: 1px solid red;
-}
-.container #preConstruction .preConstructionContent p {
-  padding-bottom: 25px;
+  padding-right: 50px;
 }
 .container #construction .constructionContent {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
 }
 .container #designBuild .designBuildContent {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
 }
 .container #sustainability .sustainabilityContent {
   display: flex;
   flex-direction: column;
+  padding-right: 50px;
 }
