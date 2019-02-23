@@ -578,10 +578,11 @@ header .headerTxt h2 {
   float: left;
   outline: none;
   cursor: pointer;
-  padding: 14px 16px;
+  padding: 20px 50px;
   margin-right: 28px;
   transition: 0.3s;
   padding-bottom: 20px;
+  font-weight: bold;
 }
 .container .tabs button:hover {
   background-color: #222222;
@@ -610,28 +611,35 @@ header .headerTxt h2 {
   font-size: 3.2rem;
   padding-bottom: 15px;
 }
-.container img {
-  width: 100%;
-  max-width: 100%;
-}
 .container p {
   padding-bottom: 25px;
+}
+.container #preConstruction .preConstructionImage {
+  padding-bottom: 50px;
 }
 .container #preConstruction .preConstructionContent {
   display: flex;
   flex-direction: column;
-  width: 50%;
   padding-right: 50px;
+}
+.container #construction .constructionImage {
+  padding-bottom: 50px;
 }
 .container #construction .constructionContent {
   display: flex;
   flex-direction: column;
   padding-right: 50px;
 }
+.container #designBuild .designImage {
+  padding-bottom: 50px;
+}
 .container #designBuild .designBuildContent {
   display: flex;
   flex-direction: column;
   padding-right: 50px;
+}
+.container #sustainability .sustainabilityImage {
+  padding-bottom: 50px;
 }
 .container #sustainability .sustainabilityContent {
   display: flex;
