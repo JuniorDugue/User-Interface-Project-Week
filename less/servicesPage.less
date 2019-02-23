@@ -5,9 +5,9 @@
     .pageTitle {
       font-size: 4.8rem;
       z-index: 1;
-      top: 210px;
-      left: 80px;
-      position: absolute;
+      top: -120px;
+      left: 40px;
+      position: relative;
       color: #fff;
     }
   }
@@ -21,20 +21,36 @@
     padding: 20px 50px 30px 50px;
     display: flex;
     justify-content: space-between;
+
+    @media @tablet {
+
+    }
+
+    @media @phone {
+      flex-direction: column;
+    }
   }
   
   /* Style the buttons that are used to open the tab content */
   .tabs button {
     background-color: inherit;
     float: left;
-    // border: none;
+    border: 1px solid black;
     outline: none;
     cursor: pointer;
     padding: 20px 50px;
-    margin-right: 28px;
+    // margin-right: 28px;
     transition: 0.3s;
     padding-bottom: 20px;
     font-weight: bold;
+
+    @media @tablet {
+      padding: 20px 40px;
+    }
+
+    @media @phone {
+      margin-bottom: 30px;
+    }
   }
   
   /* Change background color of buttons on hover */
@@ -62,6 +78,13 @@
       to {opacity: 1;}
     }
 
+    @media @tablet {
+      flex-direction: column;
+    }
+
+    @media @phone {
+      flex-direction: column;
+    }
     }
 
     h2 {
@@ -84,14 +107,24 @@
 
       .preConstructionImage {
         padding-bottom: 50px;
+        max-width: 100%;
+        width: 100%
       }
-      
+
       .preConstructionContent {
         display: flex;
         flex-direction: column;
         // width: 50%;
         padding-right: 50px;
         // border: @border;
+
+        @media @tablet {
+          padding-right: 0px;
+        }
+
+        @media @phone {
+          padding-right: 0px;
+        }
         
       } 
     }
@@ -101,12 +134,22 @@
     
         .constructionImage {
           padding-bottom: 50px;
+          max-width: 100%;
+          width: 100%
         }
 
         .constructionContent {
           display: flex;
           flex-direction: column;
           padding-right: 50px;
+
+          @media @tablet {
+            padding-right: 0px;
+          }
+
+          @media @phone {
+            padding-right: 0px;
+          }
         }
       }
     
@@ -116,12 +159,22 @@
     
         .designImage {
           padding-bottom: 50px;
+          max-width: 100%;
+          width: 100%
         }
 
         .designBuildContent {
           display: flex;
           flex-direction: column;
           padding-right: 50px;
+
+          @media @tablet {
+            padding-right: 0px;
+          }
+
+          @media @phone {
+            padding-right: 0px;
+          }
         }
       }
     
@@ -131,12 +184,22 @@
     
         .sustainabilityImage {
           padding-bottom: 50px;
+          max-width: 100%;
+          width: 100%
         }
 
         .sustainabilityContent {
           display: flex;
           flex-direction: column;
           padding-right: 50px;
+
+          @media @tablet {
+            padding-right: 0px;
+          }
+
+          @media @phone {
+            padding-right: 0px;
+          }
         }
       } 
   }

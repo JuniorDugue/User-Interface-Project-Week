@@ -559,9 +559,9 @@ header .headerTxt h2 {
 .container .servicesHeader .pageTitle {
   font-size: 4.8rem;
   z-index: 1;
-  top: 210px;
-  left: 80px;
-  position: absolute;
+  top: -120px;
+  left: 40px;
+  position: relative;
   color: #fff;
 }
 .container .servicesIntro {
@@ -573,16 +573,31 @@ header .headerTxt h2 {
   display: flex;
   justify-content: space-between;
 }
+@media (max-width: 500px) {
+  .container .tabs {
+    flex-direction: column;
+  }
+}
 .container .tabs button {
   background-color: inherit;
   float: left;
+  border: 1px solid black;
   outline: none;
   cursor: pointer;
   padding: 20px 50px;
-  margin-right: 28px;
   transition: 0.3s;
   padding-bottom: 20px;
   font-weight: bold;
+}
+@media (max-width: 800px) {
+  .container .tabs button {
+    padding: 20px 40px;
+  }
+}
+@media (max-width: 500px) {
+  .container .tabs button {
+    margin-bottom: 30px;
+  }
 }
 .container .tabs button:hover {
   background-color: #222222;
@@ -607,6 +622,16 @@ header .headerTxt h2 {
     opacity: 1;
   }
 }
+@media (max-width: 800px) {
+  .container .tabcontent {
+    flex-direction: column;
+  }
+}
+@media (max-width: 500px) {
+  .container .tabcontent {
+    flex-direction: column;
+  }
+}
 .container h2 {
   font-size: 3.2rem;
   padding-bottom: 15px;
@@ -616,33 +641,81 @@ header .headerTxt h2 {
 }
 .container #preConstruction .preConstructionImage {
   padding-bottom: 50px;
+  max-width: 100%;
+  width: 100%;
 }
 .container #preConstruction .preConstructionContent {
   display: flex;
   flex-direction: column;
   padding-right: 50px;
 }
+@media (max-width: 800px) {
+  .container #preConstruction .preConstructionContent {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .container #preConstruction .preConstructionContent {
+    padding-right: 0px;
+  }
+}
 .container #construction .constructionImage {
   padding-bottom: 50px;
+  max-width: 100%;
+  width: 100%;
 }
 .container #construction .constructionContent {
   display: flex;
   flex-direction: column;
   padding-right: 50px;
 }
+@media (max-width: 800px) {
+  .container #construction .constructionContent {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .container #construction .constructionContent {
+    padding-right: 0px;
+  }
+}
 .container #designBuild .designImage {
   padding-bottom: 50px;
+  max-width: 100%;
+  width: 100%;
 }
 .container #designBuild .designBuildContent {
   display: flex;
   flex-direction: column;
   padding-right: 50px;
 }
+@media (max-width: 800px) {
+  .container #designBuild .designBuildContent {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .container #designBuild .designBuildContent {
+    padding-right: 0px;
+  }
+}
 .container #sustainability .sustainabilityImage {
   padding-bottom: 50px;
+  max-width: 100%;
+  width: 100%;
 }
 .container #sustainability .sustainabilityContent {
   display: flex;
   flex-direction: column;
   padding-right: 50px;
+}
+@media (max-width: 800px) {
+  .container #sustainability .sustainabilityContent {
+    padding-right: 0px;
+  }
+}
+@media (max-width: 500px) {
+  .container #sustainability .sustainabilityContent {
+    padding-right: 0px;
+  }
 }
