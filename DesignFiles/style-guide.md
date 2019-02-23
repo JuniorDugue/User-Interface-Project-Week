@@ -6,18 +6,18 @@ Font family can be found here: https://fonts.google.com/specimen/Roboto
 ### GENERAL STYLES
 - Background: #FFFFFF
 - Color: #222222
-- Font Family: Roboto, Arial, sans-serif
+- Font Family: Roboto, Arial, sans-serif [x]
 
 ## Page Specific
 
 ### Home Page
-- Recent Projects Gray Square: #D8D8D8
-- Button borders: #222222
+- Recent Projects Gray Square: #D8D8D8 [x]
+- Button borders: #222222 [x]
 
 ### Services Page
-- Tab selected background: #5E9FB9
-- Tab Hover background: #222222
-- Tab Hover color: #FFF;
+- Tab selected background: #5E9FB9 [x]
+- Tab Hover background: #222222 [x]
+- Tab Hover color: #FFF; [x]
 
 ## Footer 
 Background: #828282 [x]
@@ -51,13 +51,13 @@ Background: #828282 [x]
 - Color: #FFFFFF [x]
 
 ### Navigation Logo
-- Font Weight: Bold
-- Font Size: 24px
-- Color: #FFFFFF
+- Font Weight: Bold [x]
+- Font Size: 24px [x]
+- Color: #FFFFFF [x]
 
 ### Navigation Text (Expanded)
-- Font Weight: Bold
-- Font Size: 48px
-- Line Height: 85px
-- Color: #FFFFFF
-- Hover Color: #222222
+- Font Weight: Bold [x]
+- Font Size: 48px [x]
+- Line Height: 85px [x]
+- Color: #FFFFFF [x]
+- Hover Color: #222222 [x]

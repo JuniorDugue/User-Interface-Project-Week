@@ -33,19 +33,21 @@
 					</nav>
 				</div>
 			
-		<img src="img/services/services-jumbotron.png" alt="">
-		<h1>Services</h1>
+		<div class="servicesHeader">
+			<img src="img/services/services-jumbotron.png" alt="">
+	
+			<h1 class="pageTitle">Services</h1>
+		</div>
 	
 	<!-- Services Content 
-	  Services
-		 -->
+	  Services-->
 		 
-	  <p>
-			Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
-		</p>
+	  <div class="servicesIntro">
+			<p>
+					Services include: completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
+				</p>
+		</div>
 	
-	
-	<!-- *** NOTE *** Tab Navigator Content: I used the same text for each tab to make it easy, Note that the images and text do change on click but you can just use the same text for each tab element.  All the images should be in the img folder. -->
 	<div class="tabs">
 		  <button class="tablinks" onclick="diffServices(event,'preConstruction')" id="defaultOpen">Pre-Construction</button>
 		  <button class="tablinks" onclick="diffServices(event,'construction')">Construction</button>
@@ -58,7 +60,6 @@
 			<h2>Pre-Construction</h2>
 			<p>
 					Completely synergize resource taxing relationships via premier niche markets. Professionally cultivate one-to-one customer service with robust ideas. Dynamically innovate resource-leveling customer service for state of the art customer service.
-					
 				</p>
 				<!--    -->
 				<p>
@@ -66,7 +67,9 @@
 				</p>
 		</div>
 
-			<img src="img/services/services-tab-pre-construction-img.png" alt="">
+			<div>
+				<img src="img/services/services-tab-pre-construction-img.png" alt="">
+			</div>
 </div>
 
 		<div class="tabcontent" id="construction">
@@ -168,12 +171,7 @@
 			<h5>Copyright © 2018 Smith and Jones</h5>
 		</div>
 	</footer>
-
 		</div>
-
-
-
-
 
 	<script src="js/index.js"></script>
 </body>

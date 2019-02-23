@@ -1,86 +1,121 @@
 .container {
+  .servicesHeader {
+    padding-top: 60px;
+    img {
+      
+    }
+    .pageTitle {
+      font-size: 4.8rem;
+      z-index: 1;
+      top: 210px;
+      left: 80px;
+      position: absolute;
+      color: #fff;
+    }
+  }
 
-  .tab {
+ .servicesIntro {
+   padding: 0 50px 0 50px;
+ }
+
+  .tabs {
     overflow: hidden;
-    border: 1px solid #ccc;
-    background-color: #f1f1f1;
+    padding: 40px 50px 30px 50px;
+    display: flex;
+    justify-content: space-between;
   }
   
   /* Style the buttons that are used to open the tab content */
-  .tab button {
+  .tabs button {
     background-color: inherit;
     float: left;
-    border: none;
+    // border: none;
     outline: none;
     cursor: pointer;
     padding: 14px 16px;
+    margin-right: 28px;
     transition: 0.3s;
+    padding-bottom: 20px;
   }
   
   /* Change background color of buttons on hover */
-  .tab button:hover {
-    background-color: #ddd;
+  .tabs button:hover {
+    background-color: #222222;
+    color: #fff;
   }
   
   /* Create an active/current tablink class */
-  .tab button.active {
-    background-color: #ccc;
+  .tabs button.active {
+    background-color: #5E9FB9;
+    color: #fff;
   }
 
   .tabcontent {
-    display: none;
+    display: flex;
+    flex-direction: row;
     padding: 6px 12px;
     animation: fadeEffect 1s;
+    padding: 0 50px 0 50px;
+    border: 1px red solid;
 
     @keyframes fadeEffect {
       from {opacity: 0;}
       to {opacity: 1;}
     }
-    
-    h2 {
-      font-size: 3.2rem;
+
     }
 
+    h2 {
+      font-size: 3.2rem;
+      padding-bottom: 15px;
+    }
+
+    img {
+      width: 100%;
+      max-width: 100%;
+    }
+
+    
     #preConstruction {
-      display: flex;
-      flex-direction: row;
-  
+      border: @border;
       .preConstructionContent {
         display: flex;
         flex-direction: column;
+        width: 50%;
+        border: @border;
+        
+        p {
+          padding-bottom: 25px;
+        }
       } 
     }
-  
-    #construction {
-      display: flex;
-      flex-direction: row;
-  
-      .constructionContent {
-        display: flex;
-        flex-direction: column;
+      #construction {
+        // display: flex;
+        // flex-direction: row;
+    
+        .constructionContent {
+          display: flex;
+          flex-direction: column;
+        }
       }
-    }
-  
-    #designBuild {
-      display: flex;
-      flex-direction: row;
-  
-      .designBuildContent {
-        display: flex;
-        flex-direction: column;
+    
+      #designBuild {
+        // display: flex;
+        // flex-direction: row;
+    
+        .designBuildContent {
+          display: flex;
+          flex-direction: column;
+        }
       }
-    }
-  
-    #sustainability {
-      display: flex;
-      flex-direction: row;
-  
-      .sustainabilityContent {
-        display: flex;
-        flex-direction: column;
-      }
-    }
+    
+      #sustainability {
+        // display: flex;
+        // flex-direction: row;
+    
+        .sustainabilityContent {
+          display: flex;
+          flex-direction: column;
+        }
+      } 
   }
-
-
-}

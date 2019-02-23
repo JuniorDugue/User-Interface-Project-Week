@@ -224,8 +224,13 @@ html .container {
   display: block;
   color: rgba(255, 255, 255, 0.6);
   transition: 0.6s ease all;
-  font-size: 32px;
+  font-size: 48px;
+  font-weight: bold;
   padding: 8px;
+  line-height: 85px;
+}
+.container .menuBar nav ul li a:hover {
+  color: #504545;
 }
 footer {
   display: flex;
@@ -548,30 +553,51 @@ header .headerTxt h2 {
   /* Change background color of buttons on hover */
   /* Create an active/current tablink class */
 }
-.container .tab {
-  overflow: hidden;
-  border: 1px solid #ccc;
-  background-color: #f1f1f1;
+.container .servicesHeader {
+  padding-top: 60px;
 }
-.container .tab button {
+.container .servicesHeader .pageTitle {
+  font-size: 4.8rem;
+  z-index: 1;
+  top: 210px;
+  left: 80px;
+  position: absolute;
+  color: #fff;
+}
+.container .servicesIntro {
+  padding: 0 50px 0 50px;
+}
+.container .tabs {
+  overflow: hidden;
+  padding: 40px 50px 30px 50px;
+  display: flex;
+  justify-content: space-between;
+}
+.container .tabs button {
   background-color: inherit;
   float: left;
-  border: none;
   outline: none;
   cursor: pointer;
   padding: 14px 16px;
+  margin-right: 28px;
   transition: 0.3s;
+  padding-bottom: 20px;
 }
-.container .tab button:hover {
-  background-color: #ddd;
+.container .tabs button:hover {
+  background-color: #222222;
+  color: #fff;
 }
-.container .tab button.active {
-  background-color: #ccc;
+.container .tabs button.active {
+  background-color: #5E9FB9;
+  color: #fff;
 }
 .container .tabcontent {
-  display: none;
+  display: flex;
+  flex-direction: row;
   padding: 6px 12px;
   animation: fadeEffect 1s;
+  padding: 0 50px 0 50px;
+  border: 1px red solid;
 }
 @keyframes fadeEffect {
   from {
@@ -581,38 +607,35 @@ header .headerTxt h2 {
     opacity: 1;
   }
 }
-.container .tabcontent h2 {
+.container h2 {
   font-size: 3.2rem;
+  padding-bottom: 15px;
 }
-.container .tabcontent #preConstruction {
+.container img {
+  width: 100%;
+  max-width: 100%;
+}
+.container #preConstruction {
+  border: 1px solid red;
+}
+.container #preConstruction .preConstructionContent {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  width: 50%;
+  border: 1px solid red;
 }
-.container .tabcontent #preConstruction .preConstructionContent {
+.container #preConstruction .preConstructionContent p {
+  padding-bottom: 25px;
+}
+.container #construction .constructionContent {
   display: flex;
   flex-direction: column;
 }
-.container .tabcontent #construction {
-  display: flex;
-  flex-direction: row;
-}
-.container .tabcontent #construction .constructionContent {
+.container #designBuild .designBuildContent {
   display: flex;
   flex-direction: column;
 }
-.container .tabcontent #designBuild {
-  display: flex;
-  flex-direction: row;
-}
-.container .tabcontent #designBuild .designBuildContent {
-  display: flex;
-  flex-direction: column;
-}
-.container .tabcontent #sustainability {
-  display: flex;
-  flex-direction: row;
-}
-.container .tabcontent #sustainability .sustainabilityContent {
+.container #sustainability .sustainabilityContent {
   display: flex;
   flex-direction: column;
 }
